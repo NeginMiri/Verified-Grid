@@ -6,16 +6,22 @@
 }
 body {
   height: 100vh;
- background-color: rgb(173, 206, 255);
+ background-color: hsl(210, 46%, 95%);
   line-height: 1.4;
+display: flex;
+align-items: center;
+padding-left: 200px;
+padding-right: 200px;
 }
 .father {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 4fr);
   grid-template-areas:
     "div-1 div-1 div-2 div-5"
     "div-3 div-4 div-4 div-5";
   gap: 24px;
-  
+  margin: 64px;
 }
 .div1 {
   grid-area: div-1;
@@ -57,13 +63,6 @@ border: 2px solid hsl(264, 82%, 70%);
     font-size: 13px;
     color: hsl(0, 0%, 81%);
 }
-
-
-
-
-
-
-
 .div2 {
   grid-area: div-2;
   background-color: hsl(217, 19%, 35%);
@@ -77,13 +76,6 @@ height: 24px;
 border-radius: 50%;
 border: 2px solid hsl(0, 0%, 81%);
 }
-
-
-
-
-
-
-
 .div3 {
   grid-area: div-3;
   background-color: white;
@@ -99,11 +91,18 @@ border: 2px solid hsl(0, 0%, 81%);
      font-size: 20px;
      color: hsl(217, 19%, 35%);
 }
-
-
 .div4 {
   grid-area: div-4;
+  border-radius: 8px;
+  background-color: hsl(219, 29%, 14%);
+  color: aliceblue;
+  padding: 32px;
+
 }
 .div5 {
   grid-area: div-5;
+  background-color: white;
+  border-radius: 8px;
+  color: aliceblue;
+  padding: 32px;
 }
